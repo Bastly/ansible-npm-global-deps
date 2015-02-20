@@ -1,0 +1,6 @@
+---
+- name: NPM | Intall global dependencies (Mocha)
+  sudo: yes
+  npm: name={{ item }} global=yes
+  with_items:
+    - mocha
